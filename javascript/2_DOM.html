@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="background-color: #121212;color: white;">
+    
+</body>
+<script>
+    const newDiv=document.createElement('div')
+    console.log(newDiv)
+    newDiv.setAttribute('class','one')
+    newDiv.id='oneId'
+    newDiv.style.color='orange'
+    //newDiv.innerText='hardhik' 
+    const addText=document.createTextNode('hardhik')  //prefered ad innerText overides the text which is already in the elements
+    newDiv.append(addText)
+
+    document.body.appendChild(newDiv)
+</script>
+</html>

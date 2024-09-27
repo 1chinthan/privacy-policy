@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #121212;color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function add(lang)
+    {
+    const li=document.createElement('li');
+    li.innerText=lang;
+    document.querySelector('.language').appendChild(li)
+    }
+    add('kannada')
+    add('TypeScript')
+    add('Python')
+
+    //edit
+    function edit(lang)
+    {
+        const li=document.querySelector('li:nth-child(2)');
+        const l=document.createElement('li');
+    l.innerText=lang;
+        li.replaceWith(l)
+    }
+    edit('hindi')
+
+    function remove(i)
+   {
+    const li=document.querySelector(`li:nth-child(${i})`)
+    li.remove()
+   }
+   remove(4)
+   remove(1)
+
+   //edit
+</script>
+</html>
